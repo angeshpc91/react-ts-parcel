@@ -1,0 +1,42 @@
+.headerMain {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+
+  &_content {
+    width: 100%;
+  }
+
+  position: relative;
+}
+
+.themeButton {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+}
+
+.themeButtonMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerMain {
+    display: none;
+  }
+
+  .themeButton {
+    display: none;
+  }
+
+  .themeButtonMobile {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    // margin-bottom: -24px;
+  }
+}
